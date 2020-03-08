@@ -45,3 +45,22 @@ body {
     margin: 25px;
     background-color: red;
 }
+input:not([type="color"]){
+    padding:.25em .5em;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid transparent;
+    border-radius: .3em;
+    outline: none;
+}
+
+input:not([type="color"]):focus{
+    border-color: #0Af;
+}
+input[type="color"]{
+    width: 100%;
+    border-radius: .3em;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+}
