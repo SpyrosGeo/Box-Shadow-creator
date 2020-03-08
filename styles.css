@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-items: center;
     align-items:center;
+    background-color: var(--background-color);
 
 }
 
@@ -43,7 +44,14 @@ body {
     width:100px;
     height:100px;
     margin: 25px;
-    background-color: red;
+    background-color: var(--box-color,#FFD700);
+    box-shadow:
+    calc(var(--x-position,3) * 1px) 
+    calc(var(--y-position,3) * 1px) 
+    calc(var(--blur,5) * 1px) 
+    calc(var(--spread,6) * 1px) 
+    var(--shadow-color,#000)
+    ;
 }
 input:not([type="color"]){
     padding:.25em .5em;
